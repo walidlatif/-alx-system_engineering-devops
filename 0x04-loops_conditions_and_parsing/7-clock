@@ -4,16 +4,15 @@
 #display hours from 0 to 12
 #display minutes from 1 to 59
 
-h=0
-while [ $h -le 12 ]; do
-    m=1
-    echo "Hour: $h"
-
-    while [ $m -le 59 ]; do
-        echo "$m"
-        ((m++))
+hour=0
+while [ $hour -le 12 ]; do
+    echo "Hour: $hour"
+    minute=1
+    while [ $minute -le 59 ]; do
+        echo "$minute"
+        ((minute++))
     done
 
-    ((h++))
+    ((hour++))
 done
 
