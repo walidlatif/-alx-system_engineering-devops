@@ -6,14 +6,18 @@
 
 var=1
 while [ $var -le 20 ]; do
-	if [ "$var" -eq 4 ]; then
+	case $var in
+	4)
 	       	echo $var; echo $"bad luck from China"
-	elif [ "$var" -eq 9 ]; then
+		;;
+	9)
 	       	echo $var; echo $"bad luck from Japan"
-	elif [ "$var" -eq 17 ]; then
+		;;
+	17)
 		echo $var; echo $"bad luck from Italy"
-	else
+		;;
+	*)
 		echo $var
-	fi
+esac
 	((var++))
 done
