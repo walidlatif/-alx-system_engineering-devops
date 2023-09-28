@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
+#Bash script that displays:
+#The content of the current directory
+#In a list format
+#Where only the part of the name after the first dash is displayed (refer to the example)
+
 ls | sed 's/^[0-9]-//'
 
