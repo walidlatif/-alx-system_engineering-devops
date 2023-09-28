@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
-# script that displays Best School 10 times, but for the 9th iteration
-# displays Best School and then Hi on a new line.
+
+# script that loops from 1 to 10 and:
+#displays bad luck for the 4th loop iteration
+#displays good luck for the 8th loop iteration
+#displays Best School for the other iterations
+
 var=1
 while [ $var -le 10 ]; do
 	if [ "$var" -eq 4 ]; then
