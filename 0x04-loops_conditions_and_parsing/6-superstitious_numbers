@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # script that loops from 1 to 10 and:
 #displays bad luck for the 4th loop iteration
 #displays good luck for the 8th loop iteration
@@ -8,11 +7,11 @@
 var=1
 while [ $var -le 20 ]; do
 	if [ "$var" -eq 4 ]; then
-	       	echo $var; ((var++)); echo $"bad luck from China"
+	       	echo $var; echo $"bad luck from China"
 	elif [ "$var" -eq 9 ]; then
-	       	echo $var; ((var++)); echo $"bad luck from Japan"
+	       	echo $var; echo $"bad luck from Japan"
 	elif [ "$var" -eq 17 ]; then
-		echo $var; ((var++)); echo $"bad luck from Italy"
+		echo $var; echo $"bad luck from Italy"
 	else
 		echo $var
 	fi
