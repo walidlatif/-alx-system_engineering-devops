@@ -2,9 +2,8 @@
 #displays To infinity and beyond indefinitely.
 #In between each iteration of the loop, add a sleep 2
 
-loop=1
-while [ $loop -le 5 ]; do
+
+while true; do
 	echo "To infinity and beyond"
 	sleep 2
-	((loop++))
 done
