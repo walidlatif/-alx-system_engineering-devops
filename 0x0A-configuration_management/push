@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Display a message
+echo "Pushing changes..."
+
+# Add all files to the staging area
+git add .
+
+# Commit changes with a default message
+git commit -m "Pushing changes"
+
+# Push changes to the remote repository (assuming the remote is named 'origin' and the branch is 'main')
+git push origin main
+
+# Display a completion message
+echo "Changes pushed successfully!"
+
